@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="style.css">
+	<title>Visit Time Log</title>
+</head>
+<body>
+
+
+<div class="div1">
+	<!-- Start and End time input -->
+	<label for="startTime">Start time:</label>
+	<br>
+	<input type="time" id="startTime" name="startTime">
+	<button id="startTimeButton"> Now </button>
+	<br><br>
+	<label for="endTime">End time:</label>
+	<br>
+	<input type="time" id="endTime" name="endTime">
+	<button id="endTimeButton"> Now </button>
+</div>
+<div class="div2">
+	<button onclick="openNew()"> Open New Page</button>
+	<br><br>
+	<label for ="notes">Notes:</label>
+	<br>
+	<textarea id="notes" name="notes" rows="1"></textarea>
+</div>
+<br><br>
+
+
+<!-- Additional time timer -->
+<label for="timerMinutes">Additional minutes:</label>
+<br>
+<input type="number" id="timerMinutes" name="timerMinutes" value = "00">
+<span id = "timerSeconds">00</span>
+<button onclick = "toggleTimer()" id="timerStartButton"> Start </button>
+<button onclick = "resetTimer()" id="timerResetButton"> Reset </button>
+<br><br>
+
+<!-- Clear all values -->
+<button onclick = "clearAll()"> Clear all </button>
+
+<br><br>
+
+<!-- Text box with copy -->
+<textarea value="" id="myInput" name = "myInput" rows="10" cols = "46"></textarea>
+<br>
+<button onclick="copyTextField()"> Copy text </button> <span iD = "output"></span>
+
+<script src="script.js"></script>
+
+</body>
+</html>
