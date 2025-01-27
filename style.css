@@ -1,43 +1,36 @@
 
-
 body {
     font-family: verdana, sans-serif;
-    color: whitesmoke;
-    background-color: #1B263B;
-    vertical-align: auto;
-    margin: 20;
-    padding: 20;
-    max-width: 370px;
+    color: #fff;
+    background-color: #000;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 div {
-    display: inline-block;
+    width: 50%;
+    height: 50%;
+    position: fixed;
 }
 
-div.div2 {
-    vertical-align: top;
-    padding-left: 30px;
-    padding-top: 18px;
-    margin: 20;
+div.topLeft {
+    top: 0;
+    left: 0;
 }
 
-button {
-    display: inline-block;
-    padding: 6px 10px;
-    font-size: 16px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: #415A77;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 5px #999;
+div.topRight {
+    top: 0;
+    left: 50%;
+    text-align: right;
 }
 
-button:active {
-  background-color: #415A77;
-  box-shadow: 0 3px #e0e1dd;
-  transform: translateY(4px);
+div.bottomLeft {
+    top: 50%;
+    left: 0;
+}
+
+div.bottomRight {
+    top: 50%;
+    left: 50%;
 }
