@@ -12,12 +12,17 @@ function fetchWeather () {
     .then(data => {
       const { name, main, weather } = data;
       const temperature = main.temp;
+      const feelsLike = main.feels_like;
       const description = weather[0].description;
+      const icon = weather[0].icon
+      const humidity = main.humidity
 
       const weatherContent = `
         <p>City: ${name}</p>
-        <p>Temperature: ${temperature}°C</p>
+        <p>Temperature: ${temperature}°F</p>
         <p>Weather: ${description}</p>
+        <p>Weather: ${icon}</p>
+        <p>Weather: ${humidity}</p>
       `;
 
       weatherDiv.innerHTML = weatherContent;
